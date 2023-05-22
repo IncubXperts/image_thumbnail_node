@@ -21,8 +21,6 @@ app.use((req, res, next) => {
 const thumbnailWidth = 200;
 const thumbnailHeight = 200;
 
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
 
 app.post('/generateThumbnail', async (req, res) => {
   console.log(req.files);
