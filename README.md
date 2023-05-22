@@ -107,7 +107,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-*Code for uploading file from front-end
+* Code for uploading file from front-end
 ```
 app.post('/generateThumbnail', async (req, res) => {
   console.log(req.files);
