@@ -129,7 +129,7 @@ function generateThumbnailFromFile(inputImageFile, outputThumbnailImageFile) {
         console.log("Thumbnail Successfully generated at: ", writeStream.path);
       }
       else {
-        console.log(err);
+        console.log(err); //When actually implementing the errors should be saved in audit log file.
       }
     });
 
@@ -137,7 +137,7 @@ function generateThumbnailFromFile(inputImageFile, outputThumbnailImageFile) {
     thumbnailStream.pipe(writeStream);
   }
   catch (error) {
-    console.error(error);
+    console.error(error); //When actually implementing the errors should be saved in audit log file.
   }
 }
 
@@ -187,16 +187,16 @@ Project Link: [https://github.com/IncubXperts/image_thumbnail_node](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/IncubXperts/image_thumbnail_csharp.svg?style=for-the-badge
-[contributors-url]: https://github.com/IncubXperts/image_thumbnail_csharp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/IncubXperts/image_thumbnail_csharp.svg?style=for-the-badge
-[forks-url]: https://github.com/IncubXperts/image_thumbnail_csharp/network/members
-[stars-shield]: https://img.shields.io/github/stars/IncubXperts/image_thumbnail_csharp.svg?style=for-the-badge
-[stars-url]: https://github.com/IncubXperts/image_thumbnail_csharp/stargazers
-[issues-shield]: https://img.shields.io/github/issues/IncubXperts/image_thumbnail_csharp.svg?style=for-the-badge
-[issues-url]: https://github.com/IncubXperts/image_thumbnail_csharp/issues
-[license-shield]: https://img.shields.io/github/license/IncubXperts/image_thumbnail_csharp.svg?style=for-the-badge
-[license-url]: https://github.com/IncubXperts/image_thumbnail_csharp/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/IncubXperts/image_thumbnail_node.svg?style=for-the-badge
+[contributors-url]: https://github.com/IncubXperts/image_thumbnail_node/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/IncubXperts/image_thumbnail_node.svg?style=for-the-badge
+[forks-url]: https://github.com/IncubXperts/image_thumbnail_node/network/members
+[stars-shield]: https://img.shields.io/github/stars/IncubXperts/image_thumbnail_node.svg?style=for-the-badge
+[stars-url]: https://github.com/IncubXperts/image_thumbnail_node/stargazers
+[issues-shield]: https://img.shields.io/github/issues/IncubXperts/image_thumbnail_node.svg?style=for-the-badge
+[issues-url]: https://github.com/IncubXperts/image_thumbnail_node/issues
+[license-shield]: https://img.shields.io/github/license/IncubXperts/image_thumbnail_node.svg?style=for-the-badge
+[license-url]: https://github.com/IncubXperts/image_thumbnail_node/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/incubxperts
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
